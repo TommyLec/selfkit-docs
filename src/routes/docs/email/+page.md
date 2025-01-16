@@ -73,7 +73,7 @@ By default **SelfKit** only track a ```Product purchase event``` when a customer
 
 ## How to use an other mail service ?
 
-If you prefer not to go through these steps or rely on AWS SES, you can use any other email service. Simply modify the ```EmailService``` located at ```src/lib/server/email```.
+If you prefer not to go through these steps or rely on AWS SES, you can use any other email service. Simply modify the ```EmailService``` located at ```src/lib/server/email``` with the implementation of your mail service (via API or Library).
 
 ## Links
 
