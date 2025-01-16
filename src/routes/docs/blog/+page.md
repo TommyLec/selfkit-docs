@@ -4,7 +4,7 @@ lastUpdate: 16/01/2025
 
 # Blog
 
-**SelfKit** makes it easy to create a blog using the power of Markdown. The Markdown is automatically converted to HTML during compilation.
+**SelfKit** makes it easy to create a blog using the power of Markdown. The Markdown is automatically converted to HTML during compilation. Additionally, the blog comes with an RSS feed enabled.
 
 ## Add a blog post
 

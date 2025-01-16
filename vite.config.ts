@@ -64,8 +64,8 @@ const config = defineConfig({
                   to: "/docs/blog/",
                 },
                 {
-                  title: "Localisation",
-                  to: "/docs/localisation/",
+                  title: "Internationalization",
+                  to: "/docs/internationalization/",
                 },
                 {
                   title: "Legal pages",
@@ -77,7 +77,24 @@ const config = defineConfig({
               title: "Components",
               items: [
                 {
-                  
+                  title: "Features grid",
+                  to: "/docs/features-grid/",
+                },
+                {
+                  title: "Call to action",
+                  to: "/docs/call-to-action/",
+                },
+                {
+                  title: "Problem",
+                  to: "/docs/problem/",
+                },
+                {
+                  title: "Pricing",
+                  to: "/docs/pricing/"
+                },
+                {
+                  title: "Icon",
+                  to: "/docs/icon/"
                 }
               ]
             },

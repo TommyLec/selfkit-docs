@@ -1,30 +1,10 @@
 ---
 title: Welcome to Sveltepress
 heroImage: /sveltepress@3x.png
-tagline: A simple, easy to use content centered site build tool with the full power of Sveltekit.
+tagline: A self hosted oriented boilerplate for developers who want full control; cut your costs, secure your data, and focus on what matters.
 actions:
-  - label: View on github
+  - label: See the docs
     type: primary
-    to: https://github.com/Blackman99/sveltepress
+    to: /docs
     external: true
-features:
-  - title: Markdown centered
-    description: To help you can start writing with minimal configuration
-    link: /docs
-  - title: Type friendly
-    description: All APIs are fully typed with typescript.
-    icon:
-      type: iconify
-      collection: logos
-      name: typescript-icon
-  - title: Build with Sveltekit
-    description: Preserve the full power of Sveltekit. So that you can do more than SSG
-  - title: Svelte in Markdown
-    description: Feel free to use svelte in markdown. Explore infinite possibilities.
-  - title: Markdown centered
-    description: To help you can start writing with minimal configuration
-  - title: Build with Sveltekit
-    description: Preserve the full power of Sveltekit. So that you can do more than SSG
-  - title: Svelte in Markdown
-    description: Feel free to use svelte in markdown. Explore infinite possibilities.
 ---

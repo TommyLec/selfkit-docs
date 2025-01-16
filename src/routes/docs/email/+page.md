@@ -36,7 +36,7 @@ You can use this Plunk instance for other applications as well. Simply create an
 
 ## Send emails
 
-**SelfKit** provide an ```EmailService``` to send emails. Here is an exemple of how to use it:
+**SelfKit** provide an ```EmailService``` to send emails. Here is an example of how to use it:
 
 ```javascript
 import { EmailService } from '$lib/server/email/emailService';
@@ -74,6 +74,8 @@ By default **SelfKit** only track a ```Product purchase event``` when a customer
 ## How to use an other mail service ?
 
 If you prefer not to go through these steps or rely on AWS SES, you can use any other email service. Simply modify the ```EmailService``` located at ```src/lib/server/email``` with the implementation of your mail service (via API or Library).
+
+Also, if your rely on the ```docker-compose.yaml``` for deployment, remove the ```plunk```, ```postgres-plunk``` and ```redis``` container from it.
 
 ## Links
 

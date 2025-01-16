@@ -54,8 +54,9 @@ Creating your own authentication system ensures full control, customization, and
 14. Go to the **Audience** tab and add test users.
 15. Once your app is ready for production, click the **Publish App** button.  
 
-## Handle authorizations
+## Handle private routes
 
+### Check authorization (User log in)
 You can specify which routes require authorization by using the `checkAuthorization` function within the `load` function. Routes without this check will remain publicly accessible to both anonymous and authenticated users.
 
 ```svelte
@@ -88,6 +89,31 @@ type Config = {
 :::note[Note]
 For most cases, I do **NOT** recommend using it. It is primarily intended for authentication-related routes (e.g. email verification).
 :::
+
+### Check subscription
+You can also specify which routes are available for subscribed users (i.e. user with an active subscription), by using the `checkSubscription` function. You can use it in the same way as the `checkAuthorization` function:
+
+```svelte
+import { checkSubscription } from '$lib/server/auth/serverUtils';
+
+export async function load({ locals }) {
+	checkSubscription(locals.subscriptions);
+	return {};
+}
+```
+
+:::note
+By default, the `checkSubscription` function will authorize users with at least one subscription in the ```active```, ```trialing``` or ```paused``` state (note that a paused subscription does not mean inactive).
+:::
+
+## Profile page
+
+Once a user is logged in, they have access to their Profile page, where they can:
+- View their profile (empty by default).
+- View their subscription details (empty if no subscription exists).
+- Configure their profile:
+   - Change email/password (not available for accounts created via a provider).
+   - Set up TOTP, passkeys, and security keys.
 
 ## Links
 

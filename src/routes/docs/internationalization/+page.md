@@ -2,7 +2,7 @@
 lastUpdate: 14/01/2025
 ---
 
-# Localisation
+# Internationalization
 
 **SelfKit** use Paraglide to handle Internationalization.
 

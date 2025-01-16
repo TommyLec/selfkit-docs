@@ -18,7 +18,7 @@ export const load: PageServerLoad = async () => {
 		pageName: 'Contact Us',
 		description: "Get in touch with our team.",
                 keywords: ['Contact', 'SelfKit'],
-                imgUrl: 'https://exemple.ie/mywebsite', // For Open graph, the image is display for twitter card and facebook
+                imgUrl: 'https://example.ie/mywebsite', // For Open graph, the image is display for twitter card and facebook
                 imgAlt: 'My website'
 	};
 };
