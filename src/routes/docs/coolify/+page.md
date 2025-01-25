@@ -1,5 +1,5 @@
 ---
-lastUpdate: 15/01/2025
+lastUpdate: 25/01/2025
 ---
 
 # Deploy on Coolify
