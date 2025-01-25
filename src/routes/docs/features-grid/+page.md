@@ -6,7 +6,10 @@ lastUpdate: 16/01/2025
 
 A component to showcase features with interactive demos in a responsive grid layout. Each feature includes a title, a brief description, and an interactive demo.
 
-<img class="rounded-lg my-5" src="../bento-grid.png" />
+
+<img class="rounded-lg my-5" src="../bento-grid.png" alt="Features grid" />
+
+## Usage
 
 ```svelte ln
 <script>

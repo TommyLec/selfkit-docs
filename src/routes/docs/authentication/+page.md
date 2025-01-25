@@ -25,6 +25,10 @@ Creating your own authentication system ensures full control, customization, and
 - Modifiy email/password (not possible for account created via providers)
 - Rate limiting
 
+:::note
+Since email/password login requires email confirmation (and thus an active email solution), the confirmation code can be retrieved directly from the frontend server console in the development environment.
+:::
+
 ## Setup Google Oauth
 
 1. Create a new project on [Google Cloud](https://console.cloud.google.com/).  
@@ -89,6 +93,10 @@ type Config = {
 :::note[Note]
 For most cases, I do **NOT** recommend using it. It is primarily intended for authentication-related routes (e.g. email verification).
 :::
+
+### Check API authorization
+
+TODO
 
 ### Check subscription
 You can also specify which routes are available for subscribed users (i.e. user with an active subscription), by using the `checkSubscription` function. You can use it in the same way as the `checkAuthorization` function:

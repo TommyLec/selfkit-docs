@@ -18,14 +18,36 @@ This tutorial won't cover Coolify installation, as they already provide excellen
 
 ## Install your app on Coolify
 
-### Link coolify to Github
+### Link Github to Coolify
 First, we need to add a new Source on Coolify. Follow these steps:
 1. In your Coolify instance, click on ```Sources``` in the left panel.
 2. Click on ```+ Add``` and then click ```Continue```.
 3. Click on ```Register Now```, connect your GitHub account, and create the new app.
 4. You should be redirected to Coolify. Here, click on ```Install repositories on GitHub``` to select which repositories you want to use (or select all).
 
-### Setup the app on Coolify
+### Quick setup (Recommended)
+
+**SelfKit** comes with a ```coolify_deploy.sh``` script to easily deploy your app on Coolify. It will:
+- Create a new project on Coolify
+- Add services to the new project
+- Add the app to the new project
+- Add environment variables to the app
+- Deploy the app
+
+:::note
+You need to have ```jq``` and ```openssl``` installed on your computer:
+- Windows: ```choco install jq```
+- Linux: ```sudo apt-get install jq```
+- MacOS: ```brew install jq```
+:::
+
+1. Enable Coolify API and create a new API token with the ```write```, ```deploy```, ```read:sensitive``` permissions.
+2. In the ``` deployment ``` folder, rename .env.example to .env and fill all fields.
+3. In your terminal, run ``` ./deployment/coolify_deploy.sh```.
+4. Your app is now set up on Coolify!
+
+
+### Setup with docker-compose
 Now, you can add your app to Coolify:
 1. Click on Project in the left panel and create a new project.
 2. Inside your new project, click on ```+ New``` to create a new resource.

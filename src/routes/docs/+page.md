@@ -38,7 +38,7 @@ pnpm run dev
 
 3. Rename ``` .env.example ``` to ``` .env ```
 ```bash
-mv .env.example .env.local
+mv .env.example .env
 ```
 
 4. Open ``` http://localhost:5173 ``` to see your app.

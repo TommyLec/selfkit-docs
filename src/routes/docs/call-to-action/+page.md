@@ -6,7 +6,9 @@ lastUpdate: 16/01/2025
 
 A simple call to action with a title, headline and CTA.
 
-<img class="rounded-lg my-5" src="../callToAction.png" />
+<img class="rounded-lg my-5" src="../callToAction.png" alt="Call to action" />
+
+## Usage
 
 ```svelte ln
 <script>

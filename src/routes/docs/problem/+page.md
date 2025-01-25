@@ -8,7 +8,7 @@ This component allows you to show your customers the consequences of not purchas
 
 It's an important part of your marketing strategy, typically placed after the hero section and before the section that presents your product in detail.
 
-<img class="rounded-lg my-5" src="../problem.png" />
+<img class="rounded-lg my-5" src="../problem.png" alt="Problem" />
 
 ```svelte ln
 <script>
